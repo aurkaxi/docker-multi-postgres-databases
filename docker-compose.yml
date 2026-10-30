@@ -1,8 +1,8 @@
 version: "3"
 services:
   db:
-    image: postgres:15.0
-    restart: always
+    image: postgres:18.0
+    restart: unless-stopped
     ports:
       - 5434:5432
     env_file:
